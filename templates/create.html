@@ -1,0 +1,16 @@
+<!--'/createフォームの入力ページ作成'-->
+<!--# base.htmlの継承を行う-->
+{% extends "base.html" %}
+
+<!--base.indexにある<body></body>の中身を以下に書いており、base.indexへ継承している。-->
+{% block body %}
+<form action="/" method="POST">
+    <label for="title">Title</label>
+    <input type="text" name="title">
+    <label for="detail">Detail</label>
+    <input type="text" name="detail">
+    <label for="due">Due</label>
+    <input type="date" name="due" required>
+    <input type="submit" value="Create">
+</form>
+{% endblock %}

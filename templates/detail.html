@@ -1,0 +1,10 @@
+<!--'/detail投稿削除のページ作成'-->
+<!--# base.htmlの継承を行う-->
+{% extends "base.html" %}
+
+<!--base.indexにある<body></body>の中身を以下に書いており、base.indexへ継承している。-->
+{% block body %}
+<h2>{{ post.title }}</h2>
+<p>{{ post.detail }}</p>
+<p>{{ post.due.date() }}</p>
+{% endblock %}
